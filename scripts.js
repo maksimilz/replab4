@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     window.onclick = function(event) {
-        if (event.target == modal) {
+        if (event.target === modal) {  // Changed to strict equality
             modal.style.display = "none";
         }
     }
