@@ -1,0 +1,252 @@
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    font-size: 1.6rem; /* Default 16px */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contacts {
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.contact-info-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact-block {
+    flex: 1;
+    min-width: 25%;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.light-gray-text {
+    color: #888888;
+}
+
+#map {
+    width: 100%;
+    height: 30rem;
+    margin-top: 1rem;
+}
+
+.footer {
+    background-color: #f0f0f0;
+    padding: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 1rem;
+    min-width: 40%;
+}
+
+.contacts-bottom {
+    margin-top: 2rem;
+}
+
+.additional-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #f0f0f0;
+    padding: 2rem;
+}
+
+.additional-section {
+    flex: 1;
+    margin: 1rem;
+    min-width: 20%;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+.contact-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-top: 2rem;
+}
+
+.contact-us-text {
+    font-size: 1.8rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a {
+    color: #000; /* Цвет иконок */
+    font-size: 2.4rem; /* Размер иконок */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007bff; /* Цвет иконок при наведении */
+}
+
+#callback-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.8rem 1.6rem;
+    border: none;
+    cursor: pointer;
+}
+
+#callback-btn:hover {
+    background-color: #45a049;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 2rem;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 40rem;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.black-text {
+    color: #000; /* Черный цвет */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 2rem;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 40rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 2.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content label {
+    margin-bottom: 0.5rem;
+}
+
+.modal-content input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal-content button {
+    padding: 0.8rem;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modal-content button:hover {
+    background-color: #45a049;
+}
