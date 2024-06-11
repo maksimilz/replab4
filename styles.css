@@ -4,9 +4,10 @@ html {
 
 body {
     font-size: 1.6rem; /* Default 16px */
-    font-family: Arial, sans-serif;
+    font-family: 'Onest', serif;
     margin: 0;
     padding: 0;
+    background-color: #fff; /* White background */
 }
 
 .contacts {
@@ -33,6 +34,7 @@ h1 {
 p {
     font-size: 1.6rem;
     line-height: 1.5;
+    margin: 0; /* Remove the default margin for paragraphs */
 }
 
 .light-gray-text {
@@ -46,7 +48,7 @@ p {
 }
 
 .footer {
-    background-color: #f0f0f0;
+    background-color: #fff; /* White background for footer */
     padding: 2rem;
 }
 
@@ -62,6 +64,10 @@ p {
     min-width: 40%;
 }
 
+.footer-section p {
+    margin-bottom: 0.5rem; /* Add a small margin at the bottom */
+}
+
 .contacts-bottom {
     margin-top: 2rem;
 }
@@ -70,7 +76,7 @@ p {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: #f0f0f0;
+    background-color: #fff; /* White background for additional info sections */
     padding: 2rem;
 }
 
@@ -78,6 +84,14 @@ p {
     flex: 1;
     margin: 1rem;
     min-width: 20%;
+}
+.additional-section .social-icons a,
+.additional-section .social-icons a:hover,
+.additional-section .social-icons a i {
+    text-decoration: none !important;
+}
+.gray-text {
+    color: #888; /* Используйте желаемый оттенок серого */
 }
 
 h3 {
@@ -100,8 +114,8 @@ ul li {
     align-items: center;
     padding: 2rem;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
+    border-radius: 15px; /* Stronger rounded corners */
+    background-color: #fff; /* White background */
     margin-top: 2rem;
 }
 
@@ -115,26 +129,59 @@ ul li {
 }
 
 .social-icons a {
-    color: #000; /* Цвет иконок */
     font-size: 2.4rem; /* Размер иконок */
     text-decoration: none;
     transition: color 0.3s;
 }
 
+/* Возвращаем цвета иконок в разделе "Связаться с нами сейчас" */
+.contact-us .social-icons .fa-whatsapp {
+    color: #25D366; /* WhatsApp green */
+}
+
+.contact-us .social-icons .fa-telegram-plane {
+    color: #0088cc; /* Telegram blue */
+}
+
+.contact-us .social-icons .fa-instagram {
+    color: #C13584; /* Instagram gradient color */
+}
+
+/* Изменяем цвет иконок в других разделах на черный */
+.footer-section .fa-whatsapp,
+.footer-section .fa-telegram-plane,
+.footer-section .fa-instagram,
+.footer-section .fa-vk {
+    color: black; /* Устанавливаем черный цвет */
+}
+
+.social-icons .fa-facebook {
+    color: #1877F2; /* Facebook blue */
+}
+
+.social-icons .fa-vk {
+    color: #4680C2; /* VK blue */
+}
+
 .social-icons a:hover {
-    color: #007bff; /* Цвет иконок при наведении */
+    opacity: 0.8; /* Slightly reduce opacity on hover */
+}
+
+.black-title {
+    color: black; /* Установка черного цвета */
 }
 
 #callback-btn {
-    background-color: #4CAF50;
-    color: white;
+    background-color: transparent; /* Убираем заливку */
+    color: black; /* Цвет текста */
     padding: 0.8rem 1.6rem;
-    border: none;
+    border: 1px solid black; /* Добавляем обводку */
     cursor: pointer;
+    border-radius: 5px; /* Stronger rounded corners */
 }
 
 #callback-btn:hover {
-    background-color: #45a049;
+    background-color: #f0f0f0; /* Добавляем легкий серый фон при наведении */
 }
 
 .modal {
@@ -146,52 +193,12 @@ ul li {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.5); /* Semi-transparent background for modal */
     padding-top: 60px;
 }
 
 .modal-content {
-    background-color: #fefefe;
-    margin: 5% auto;
-    padding: 2rem;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 40rem;
-}
-
-.close-btn {
-    color: #aaa;
-    float: right;
-    font-size: 2.8rem;
-    font-weight: bold;
-}
-
-.close-btn:hover,
-.close-btn:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-.black-text {
-    color: #000; /* Черный цвет */
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.5);
-    padding-top: 60px;
-}
-
-.modal-content {
-    background-color: #fefefe;
+    background-color: #fff; /* White background for modal content */
     margin: 5% auto;
     padding: 2rem;
     border: 1px solid #888;
@@ -249,4 +256,8 @@ ul li {
 
 .modal-content button:hover {
     background-color: #45a049;
+}
+
+.black-text {
+    color: #000; /* Черный цвет */
 }
