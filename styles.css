@@ -1,9 +1,16 @@
+@font-face {
+    font-family: 'Onest';
+    src: url('fonts/Onest-Light.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 html {
     font-size: 62.5%;
 }
 
 body {
-    font-size: 1.8rem; /* 18px */
+    font-size: 1.8rem;
     font-family: 'Onest', serif;
     margin: 0;
     padding: 0;
@@ -13,12 +20,14 @@ body {
     align-items: center;
     min-height: 100vh;
 }
+
 .container {
     width: 80%;
     max-width: 120rem;
     background-color: #f8f9fa;
     padding: 2rem;
 }
+
 .contacts {
     padding: 2rem;
 }
@@ -27,7 +36,6 @@ h1 {
     font-family: 'Onest', serif;
     font-style: normal;
     font-weight: 400;
-
 }
 
 .contact-info-row {
