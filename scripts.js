@@ -5,9 +5,17 @@ document.addEventListener("DOMContentLoaded", function() {
             center: [43.115143, 131.885341],
             zoom: 16
         });
+
         var myPlacemark = new ymaps.Placemark([43.115143, 131.885341], {
-            hintContent: 'Premier Basic Professional'
+            hintContent: 'Вам сюда ',
+            balloonContent: ' Владивосток, Проспект Острякова, 5г, этаж 8'
+        }, {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/custom-icon.jpg', // Specify the path to your custom icon
+            iconImageSize: [40, 55], // Size of the icon
+            iconImageOffset: [-20, -55] // Offset of the icon
         });
+
         myMap.geoObjects.add(myPlacemark);
     }
 
@@ -29,9 +37,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     window.onclick = function(event) {
-        if (event.target === modal) {  // Changed to strict equality
+        if (event.target === modal) {
             modal.style.display = "none";
         }
     }
 });
-
