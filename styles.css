@@ -22,10 +22,12 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 100%;
     max-width: 120rem;
     background-color: #f8f9fa;
     padding: 2rem;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .contacts {
@@ -36,6 +38,8 @@ h1 {
     font-family: 'Onest', serif;
     font-style: normal;
     font-weight: 400;
+    font-size: 2rem;
+
 }
 
 .contact-info-row {
@@ -46,8 +50,8 @@ h1 {
 }
 
 .contact-block {
-    flex: 1;
-    min-width: 25%;
+    flex: 1 1 30%;
+    min-width: 200px;
 }
 
 p {
@@ -69,18 +73,19 @@ p {
 .footer {
     background-color: #f8f9fa;
     padding: 2rem;
+    margin-top: 2rem;
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 2rem;
+
 }
 
 .footer-section {
-    flex: 1;
-    margin: 1rem;
-    min-width: 40%;
+    flex: 1 1 45%;
 }
 
 .footer-section p {
@@ -141,7 +146,7 @@ ul li {
 }
 
 .contact-us-text {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 .social-icons {
@@ -284,45 +289,36 @@ ul li {
     color: #000;
 }
 
-/* Media Queries for Mobile */
-@media (max-width: 768px) {
-    .contact-info-row {
-        flex-direction: column;
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+        max-width: 100%; /* Добавляем эту строку для уверенности, что контейнер не будет шире 100% на более узких экранах */
     }
 
-    .contact-block {
+    .footer-section,
+    .additional-section {
         min-width: 100%;
-        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-block {
+        flex: 1 1 100%;
+        min-width: 0; /* Важно указать минимальную ширину 0 для адаптивности */
+    }
+
+    .footer-section,
+    .additional-section {
+        flex: 1 1 100%;
     }
 
     .footer-content {
         flex-direction: column;
     }
 
-    .footer-section {
-        min-width: 100%;
-    }
-
-    .additional-info {
-        flex-direction: column;
-    }
-
-    .additional-section {
-        min-width: 100%;
-        margin-bottom: 2rem;
-    }
-
     .contact-us {
         flex-direction: column;
         text-align: center;
-    }
-
-    .contact-us-text {
-        margin-bottom: 1rem;
-    }
-
-    .social-icons {
-        justify-content: center;
     }
 }
 
@@ -351,4 +347,10 @@ ul li {
     .close-btn {
         font-size: 2.4rem;
     }
+
+    .container {
+        width: 100%;
+        padding: 1rem;
+    }
 }
+
