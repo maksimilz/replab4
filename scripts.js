@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
             balloonContent: ' Владивосток, Проспект Острякова, 5г, этаж 8'
         }, {
             iconLayout: 'default#image',
-            iconImageHref: 'img/custom-icon.jpg', // Specify the path to your custom icon
+            iconImageHref: "img/custom-icon.jpg",
             iconImageSize: [40, 55], // Size of the icon
             iconImageOffset: [-20, -55] // Offset of the icon
         });
