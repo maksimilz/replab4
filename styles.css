@@ -3,20 +3,31 @@ html {
 }
 
 body {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-family: 'Onest', serif;
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
-
+.container {
+    width: 80%;
+    max-width: 1200px;
+    background-color: #f8f9fa;
+    padding: 2rem;
+}
 .contacts {
     padding: 2rem;
 }
 
 h1 {
-    font-size: 2.4rem;
-    margin-bottom: 1rem;
+    font-family: 'Onest', serif;
+    font-style: normal;
+    font-weight: 400;
+
 }
 
 .contact-info-row {
@@ -32,7 +43,7 @@ h1 {
 }
 
 p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     line-height: 1.5;
     margin: 0;
 }
@@ -48,7 +59,7 @@ p {
 }
 
 .footer {
-    background-color: #fff;
+    background-color: #f8f9fa;
     padding: 2rem;
 }
 
@@ -76,7 +87,7 @@ p {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: #fff;
+    background-color: #f8f9fa;
     padding: 2rem;
 }
 
@@ -136,7 +147,6 @@ ul li {
     transition: color 0.3s;
 }
 
-
 .contact-us .social-icons .fa-whatsapp {
     color: #25D366;
 }
@@ -148,7 +158,6 @@ ul li {
 .contact-us .social-icons .fa-instagram {
     color: #C13584;
 }
-
 
 .footer-section .fa-whatsapp,
 .footer-section .fa-telegram-plane,
@@ -203,7 +212,7 @@ ul li {
 }
 
 .modal-content {
-    background-color: #fff;
+    background-color: #f8f9fa;
     margin: 5% auto;
     padding: 2rem;
     border: 1px solid #888;
