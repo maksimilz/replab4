@@ -7,13 +7,13 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
         var myPlacemark = new ymaps.Placemark([43.115143, 131.885341], {
-            hintContent: 'Вам сюда ',
-            balloonContent: ' Владивосток, Проспект Острякова, 5г, этаж 8'
+            hintContent: 'Вам сюда',
+            balloonContent: 'Владивосток, Проспект Острякова, 5г, этаж 8'
         }, {
             iconLayout: 'default#image',
-            iconImageHref: "img/custom-icon.jpg",
-            iconImageSize: [40, 55], // Size of the icon
-            iconImageOffset: [-20, -55] // Offset of the icon
+            iconImageHref: 'img/custom-icon.jpg',
+            iconImageSize: [40, 55],
+            iconImageOffset: [-20, -55]
         });
 
         myMap.geoObjects.add(myPlacemark);
