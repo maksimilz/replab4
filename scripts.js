@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
             balloonContent: 'Владивосток, Проспект Острякова, 5г, этаж 8'
         }, {
             iconLayout: 'default#image',
-            iconImageHref: 'img/custom-icon.jpg',
+            iconImageHref: 'img/custom-icon.png',
             iconImageSize: [40, 55],
             iconImageOffset: [-20, -55]
         });

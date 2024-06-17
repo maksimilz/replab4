@@ -19,6 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    flex-direction: column;
 }
 
 .container {
@@ -73,6 +74,7 @@ p {
     background-color: #f8f9fa;
     padding: 2rem;
     margin-top: 2rem;
+    width: 100%;
 }
 
 .footer-content {
@@ -173,26 +175,24 @@ ul li {
 .footer-section .fa-telegram-plane,
 .footer-section .fa-instagram,
 .footer-section .fa-vk,
-.additional-section .fa-whatsapp,
-.additional-section .fa-telegram-plane,
 .additional-section .fa-instagram {
-    color: black;
+    color: black; /* Поддержание цвета черного для иконок в дополнительных разделах */
 }
 
 .social-icons .fa-facebook {
-    color: #1877F2;
+    color: #1877F2; /* Цвет иконки Facebook */
 }
 
 .social-icons .fa-vk {
-    color: #4680C2;
+    color: #4680C2; /* Цвет иконки VK */
 }
 
 .social-icons a {
-    opacity: 0.8;
+    opacity: 0.8; /* Прозрачность иконок в социальных сетях */
 }
 
 .black-title {
-    color: #212529;
+    color: #212529; /* Цвет черного заголовка */
 }
 
 #callback-btn {
@@ -204,10 +204,6 @@ ul li {
     border-radius: 5px;
 }
 
-#callback-btn {
-    background-color: #f0f0f0;
-}
-
 .modal {
     display: none;
     position: fixed;
@@ -217,7 +213,7 @@ ul li {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     padding-top: 60px;
 }
 
@@ -229,7 +225,7 @@ ul li {
     width: 80%;
     max-width: 40rem;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .close-btn {
@@ -238,11 +234,6 @@ ul li {
     font-size: 2.8rem;
     font-weight: bold;
     cursor: pointer;
-}
-
-.close-btn {
-    color: black;
-    text-decoration: none;
 }
 
 .modal-content h2 {
@@ -277,14 +268,6 @@ ul li {
     transition: background-color 0.3s;
 }
 
-.modal-content button {
-    background-color: #45a049;
-}
-
-.black-text {
-    color: #000;
-}
-
 @media (max-width: 1024px) {
     .container {
         width: 90%;
@@ -295,38 +278,26 @@ ul li {
     .additional-section {
         min-width: 100%;
     }
+    .footer-section,
+    .additional-section {
+        min-width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
-    .contact-block {
-        flex: 1 1 100%;
-        min-width: 0;
+    .close-btn {
+        font-size: 2.4rem;
     }
-
-    .footer-section,
-    .additional-section {
-        flex: 1 1 100%;
+    .modal-content {
+        width: 90%;
+        padding: 1.5rem;
     }
-
-    .footer-content {
-        flex-direction: column;
-    }
-
-    .contact-us {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        font-size: 1.4rem;
-    }
-
     h1 {
         font-size: 2rem;
     }
-
+    .container {
+        padding: 1rem;
+    }
     .contact-us-text {
         font-size: 1.4rem;
     }
@@ -344,18 +315,31 @@ ul li {
         width: 16px;
         height: 16px;
     }
+}
 
-    .modal-content {
-        width: 90%;
-        padding: 1.5rem;
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
     }
-
     .close-btn {
-        font-size: 2.4rem;
+        font-size: 2rem;
+    }
+    .contact-us-text {
+        font-size: 1.2rem;
     }
 
-    .container {
-        width: 100%;
-        padding: 1rem;
+    .social-icons a {
+        font-size: 1.6rem;
+    }
+
+    #callback-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 1.2rem;
+    }
+
+    .additional-section .social-icons a img {
+        width: 14px;
+        height: 14px;
     }
 }
+
