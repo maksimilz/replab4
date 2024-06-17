@@ -270,77 +270,49 @@ ul li {
     transition: background-color 0.3s;
 }
 
-@media (max-width: 1024px) {
-    .container {
-        width: 90%;
-        max-width: 100%;
+@media (max-width: 480px) {
+    html {
+        font-size: 3.5vw;
     }
 
-    .footer-section,
-    .additional-section {
+    .contact-info-row {
+        flex-direction: column;
+    }
+
+    .contact-block {
         min-width: 100%;
     }
-    .footer-section,
-    .additional-section {
-        min-width: 22%;
-    }
-}
 
-@media (max-width: 768px) {
-    .close-btn {
-        font-size: 2.4rem;
+    .footer-content {
+        flex-direction: column;
     }
+
+    .footer-section {
+        min-width: 100%;
+    }
+
+    .contact-us {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .social-icons {
+        gap: 0.5rem;
+    }
+
     .modal-content {
         width: 90%;
-        padding: 1.5rem;
-    }
-    h1 {
-        font-size: 1.8rem;
-    }
-    .container {
-        padding: 1rem;
-    }
-    .contact-us-text {
-        font-size: 1.4rem;
+        margin: 20% auto;
     }
 
-    .social-icons a {
-        font-size: 1.8rem;
+    .additional-info {
+        flex-direction: column;
     }
 
-    #callback-btn {
-        padding: 0.5rem 1rem;
-        font-size: 1.4rem;
-    }
-
-    .additional-section .social-icons a img {
-        width: 16px;
-        height: 16px;
+    .additional-section {
+        min-width: 100%;
+        margin: 1rem 0;
     }
 }
 
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.8rem;
-    }
-    .close-btn {
-        font-size: 1.8rem;
-    }
-    .contact-us-text {
-        font-size: 1.2rem;
-    }
 
-    .social-icons a {
-        font-size: 1.6rem;
-    }
-
-    #callback-btn {
-        padding: 0.4rem 0.8rem;
-        font-size: 1.2rem;
-    }
-
-    .additional-section .social-icons a img {
-        width: 14px;
-        height: 14px;
-    }
-}
