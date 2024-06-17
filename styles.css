@@ -23,16 +23,18 @@ body {
 }
 
 .container {
-    width: 100%;
-    max-width: 120rem;
+    width: 90%;
+    max-width:100%;
     background-color: #f8f9fa;
     padding: 1rem;
     margin: 0 auto;
     box-sizing: border-box;
+
+
 }
 
 .contacts {
-    padding: 2rem;
+    padding: 1.8rem;
 }
 
 h1 {
@@ -72,7 +74,7 @@ p {
 
 .footer {
     background-color: #f8f9fa;
-    padding: 2rem;
+    padding: 1.8rem;
     margin-top: 2rem;
     width: 100%;
 }
@@ -101,7 +103,7 @@ p {
     justify-content: space-between;
     flex-wrap: wrap;
     background-color: #f8f9fa;
-    padding: 2rem;
+    padding: 1.8rem;
 }
 
 .additional-section {
@@ -137,7 +139,7 @@ ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 1.8rem;
     border: 1px solid #070000;
     border-radius: 15px;
     background-color: #fff;
@@ -220,7 +222,7 @@ ul li {
 .modal-content {
     background-color: #f8f9fa;
     margin: 5% auto;
-    padding: 2rem;
+    padding:1.8rem;
     border: 1px solid #888;
     width: 80%;
     max-width: 40rem;
@@ -280,7 +282,7 @@ ul li {
     }
     .footer-section,
     .additional-section {
-        min-width: 100%;
+        min-width: 22%;
     }
 }
 
@@ -293,7 +295,7 @@ ul li {
         padding: 1.5rem;
     }
     h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .container {
         padding: 1rem;
@@ -322,7 +324,7 @@ ul li {
         font-size: 1.8rem;
     }
     .close-btn {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .contact-us-text {
         font-size: 1.2rem;
@@ -342,4 +344,3 @@ ul li {
         height: 14px;
     }
 }
-
