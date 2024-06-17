@@ -178,23 +178,23 @@ ul li {
 .footer-section .fa-instagram,
 .footer-section .fa-vk,
 .additional-section .fa-instagram {
-    color: black; /* Поддержание цвета черного для иконок в дополнительных разделах */
+    color: black;
 }
 
 .social-icons .fa-facebook {
-    color: #1877F2; /* Цвет иконки Facebook */
+    color: #1877F2;
 }
 
 .social-icons .fa-vk {
-    color: #4680C2; /* Цвет иконки VK */
+    color: #4680C2;
 }
 
 .social-icons a {
-    opacity: 0.8; /* Прозрачность иконок в социальных сетях */
+    opacity: 0.8;
 }
 
 .black-title {
-    color: #212529; /* Цвет черного заголовка */
+    color: #212529;
 }
 
 #callback-btn {
