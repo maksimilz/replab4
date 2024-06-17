@@ -6,7 +6,7 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 0.86vw;
 }
 
 body {
@@ -25,7 +25,7 @@ body {
     width: 100%;
     max-width: 120rem;
     background-color: #f8f9fa;
-    padding: 2rem;
+    padding: 1rem;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -39,7 +39,6 @@ h1 {
     font-style: normal;
     font-weight: 400;
     font-size: 2rem;
-
 }
 
 .contact-info-row {
@@ -81,7 +80,6 @@ p {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 2rem;
-
 }
 
 .footer-section {
@@ -111,7 +109,6 @@ p {
 }
 
 .additional-section .social-icons a,
-.additional-section .social-icons a:hover,
 .additional-section .social-icons a i {
     text-decoration: none !important;
 }
@@ -190,7 +187,7 @@ ul li {
     color: #4680C2;
 }
 
-.social-icons a:hover {
+.social-icons a {
     opacity: 0.8;
 }
 
@@ -207,7 +204,7 @@ ul li {
     border-radius: 5px;
 }
 
-#callback-btn:hover {
+#callback-btn {
     background-color: #f0f0f0;
 }
 
@@ -243,8 +240,7 @@ ul li {
     cursor: pointer;
 }
 
-.close-btn:hover,
-.close-btn:focus {
+.close-btn {
     color: black;
     text-decoration: none;
 }
@@ -281,7 +277,7 @@ ul li {
     transition: background-color 0.3s;
 }
 
-.modal-content button:hover {
+.modal-content button {
     background-color: #45a049;
 }
 
@@ -332,11 +328,21 @@ ul li {
     }
 
     .contact-us-text {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .social-icons a {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+
+    #callback-btn {
+        padding: 0.5rem 1rem;
+        font-size: 1.4rem;
+    }
+
+    .additional-section .social-icons a img {
+        width: 16px;
+        height: 16px;
     }
 
     .modal-content {
@@ -353,4 +359,3 @@ ul li {
         padding: 1rem;
     }
 }
-
